@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+h2,
+h4 {
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(83, 119, 134);
+}
