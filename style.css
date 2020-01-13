@@ -12,3 +12,68 @@ p {
     font-size: 20px;
     color: rgb(83, 119, 134);
 }
+#aviso {
+    color: rgb(201, 193, 255);
+    font-size: 200%;
+}
+
+#descendente span {
+    font-size: 30px;
+    color: crimson;
+}
+
+.ejemplo {
+    color: midnightblue;
+}
+
+.destacado {
+    font-family: cursive;
+}
+
+ul * {
+    font-size: larger;
+    color: rgb(145, 134, 214);
+}
+
+h1+h3
+{
+    color: lightcoral;
+}
+h5~h6
+{
+    font-size: 35px;
+    font-family: fantasy;
+}
+p>span
+{
+    color:firebrick;
+}
+.prueba p:first-child
+{
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    padding: 4px;
+}
+.prueba2 #texto1, #texto3:only-child
+{
+    background-color: darkblue;
+    color: coral;
+}
+.texto:last-child
+{
+    font-family: cursive;
+    color: hotpink;
+}
+.prueba4 p:nth-child(4)
+{
+   font-size: 70px;
+}
+.prueba5 p:nth-last-child(2)
+{
+    color: darkorange;
+}
+.prueba6 p:first-of-type
+{
+    font-family: monospace;
+    color: rgb(255, 202, 235);
+}

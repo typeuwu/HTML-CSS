@@ -23,5 +23,324 @@
 
         <p>Hola me llamo Wendy</p>
     </div>
+
+    <!--Selector por ID-->
+
+    <div class="ID">
+        <h2>Selector por ID</h2>
+        <h4>Seleccionamos los elementos con un id especifico.</h3>
+            <div class="ejemplo">
+                &lt;p id="aviso"&gt; Texto1 &lt;/p&gt;<br> &lt;p&gt;Texto2 &lt;/p&gt;
+                <br>
+                <span>
+                    <br>Formato CSS:
+                    <br><br>
+                    #aviso {
+                    color: rgb(201, 193, 255);
+                    font-size: 200%;
+                    }
+                </span>
+                <br><br>
+                El resultado es este:
+            </div>
+
+
+            <div>
+                <p id="aviso">Texto1</p>
+                <p>Texto2</p>
+            </div>
+
+    </div>
+
+    <!--Selector descendente-->
+
+    <div class="descendente">
+        <h2>Selector descendente</h2>
+        <h4>Selecciona un elemento dentro de otro elemento</h4>
+        <div class="ejemplo">
+            &lt;div id="descendente"&gt;<br> &lt;span&gt;Texto1&lt;/span&gt;
+            <br> &lt;/div&gt;<br>
+            <br>Formato CSS:
+            <br>
+            <br> #descendente span { font-size: 20px; color: crimson; }
+            <br><br>
+            El resultado es este:
+        </div>
+        <br>
+        <div id="descendente">
+            <span>Texto1</span>
+        </div>
+    </div>
+
+    <!--Selector de clase-->
+
+    <div class="clase">
+        <h2>Selector de clase</h2>
+        <h4>Selecciona elementos por su clase</h4>
+        <div class="ejemplo">
+            &lt;p class="destacado"&gt;texto&lt;/p&gt;<br>&lt;p&gt;texto2&lt;/p&gt;<br>
+            <br>Formato CSS:
+            <br>
+            <br> .destacado { font-family: cursive; }
+            <br>
+            <br>
+            El resultado es este:
+        </div>
+
+        <p class="destacado">Texto1</p>
+        <p>Texto2</p>
+    </div>
+
+    <!--Selector universal-->
+
+    <div class="universal">
+        <h2>Selector universal</h2>
+        <h4>Puedes seleccionar todos los elementos con el selector universal</h4>
+        <div class="ejemplo">
+            &lt;ul&gt;<br>&lt;li&gt;Hola&lt;li&gt;<br>&lt;li&gt;Wapos&lt;li&gt;<br>&lt;ul&gt;
+            <br>
+            <br>Formato CSS:
+            <br>
+            <br>ul * {font-size: large; color: yellowgreen;}
+            <br>
+            <br>
+            El resultado es este:
+        </div>
+
+        <ul>
+            <li>Hola</li>
+            <li>Wapos</li>
+        </ul>
+    </div>
+
+    <!--Selector adyacente-->
+
+    <div class="adyacente">
+        <h2>Selector adyacente</h2>
+        <h4>Este selecciona los elementos que le siguen de un primer elemento</h4>
+        <div class="ejemplo">
+            &lt;h1&gt;Titulo&lt;/h1&gt;<br>
+            &lt;h2&gt;Subtitulo&lt;/h2&gt;<br>
+            &lt;h2&gt;Otro subtitulo&lt;/h2&gt;<br><br>
+            Formato CSS:
+            <br>
+            <br>h1+h2 {color: lightcoral;}
+            <br><br>
+            El resultado es este:
+        </div>
+
+    <h1>Titulo</h1>
+    <h3>Subtitulo</h3>
+    <h3>Otro subtitulo</h3>
+        
+    </div>
+
+    <!--Selector general de hermanos-->
+
+    <div class="siblings">
+        <h2>Selector general de hermanos</h2>
+        <h4>Este selecciona todos los hermanos de un elemento que le sigue a este</h4>
+        <div class="ejemplo">
+           
+            &lt;h5&gt;Buenos&lt;/h5&gt;<br>
+            &lt;h6&gt;días&lt;/h6&gt;
+            <br><br>
+            Formato CSS:
+            <br>
+            <br>h5~h6 {font-size: 35px; font-family: fantasy;}
+            <br><br>
+            El resultado es este:
+        </div>
+
+        <h5>Buenos</h5>
+        <h6>días</h6>
+    </div>
+
+    <!--Selector de hijos-->
+
+    <div class="child">
+        <h2>Selector de hijos</h2>
+        <h4>Este selecciona elementos que son hijos directos de otros elementos.<br>
+            Un elemento hijo es cualquier elemento que es anidado directamente de otro elemento.
+        </h4>
+        <div class="ejemplo">
+            &lt;p&gt;&lt;span&gt;Texto&lt;/span&gt;&lt;/p&gt;<br>
+            &lt;p&gt;&lt;a href="#"&gt;Texto&lt;/a&gt;&lt;/p&gt;<br>
+            &lt;p&gt;&lt;span&gt;Texto3&lt;/span&gt;&lt;/p&gt;<br>
+            <br><br>
+            Formato CSS:
+            <br>
+            <br>p>span {color: firebrick;}
+            <br><br>
+            El resultado es este:
+        </div>
+
+        <p><span>Texto</span></p>
+        <p><a href="#">Texto2</a></p>
+        <p><span>Texto3</span></p>
+    </div>
+
+    <!--Pseudo-selector primer hijo-->
+
+    <div class="first-child">
+        <h2>Pseudo-selector primer hijo</h2>
+        <h4>Selecciona un primer elemento hijo que está dentro de otro elemento.</h4>
+        <div class="ejemplo">
+            &lt;div class="prueba"&gt;<br>
+            &lt;p&gt;texto1&lt;/p&gt;<br>
+            &lt;p&gt;texto2&lt;/p&gt;<br>
+            &lt;p&gt;texto3&lt;/p&gt;<br> 
+            &lt;/div&gt;<br><br>
+            Formato CSS:
+            <br><br>
+            .prueba p:first-child { background-color: cornflowerblue; border-radius: 3px;}
+            <br><br>
+            El resultado es este:
+        </div>
+        <div class="prueba">
+            <p>texto1</p>
+            <p>texto2</p>
+            <p>texto3</p>
+        </div>
+    </div>
+
+    <!--Only child pseudo-selector-->
+
+    <div class="only-child">
+        <h2>Only-child pseudo-selector</h2>
+        <h4>Selecciona un elemento que sea el único elemento dentro de otro.</h4>
+        <div class="ejemplo">
+            &lt;div class="prueba2"&gt;<br>
+            &lt;p id="texto1"&gt;texto1&lt;/p&gt;<br>
+            &lt;p&gt;texto2&lt;/p&gt;<br>
+            &lt;/div&gt;
+            &lt;div class="prueba2"&gt;<br>
+            &lt;p id="texto3"&gt;texto3&lt;/p&gt;<br>
+            &lt;/div&gt;
+            <br><br>
+            Formato CSS:
+            <br><br>
+            .prueba2 #texto1, #texto3:only-child { background-color: darkblue; color: coral; }
+            <br><br>
+            Este es el resultado:
+
+
+        </div>
+        <div class="prueba2">
+            <p id="texto1">texto1</p>
+            <p>texto2</p>
+        </div>
+        <div class="prueba2">
+            <p id="texto3">texto3</p>
+        </div>
+    </div>
+
+    <!--Last child pseudo-selector-->
+
+    <div class="last-child">
+        <h2>Last-child pseudo selector</h2>
+        <h4>Selecciona el último elemento dentro de otro elemento.</h4>
+        <div class="ejemplo">
+            &lt;div class="prueba3"&gt;<br>
+            &lt;div&gt;&lt;p class="texto"&gt;Texto1&lt;/p&gt;&lt;/div&gt;<br>
+            &lt;p&gt;un espacio&lt;/p&gt;<br>
+            &lt;p&gt;otro espacio&lt;/p&gt;<br>
+            &lt;p class="texto"&gt;Texto2&lt;/p&gt;<br>
+            &lt;/div&gt;<br><br>
+            Formato CSS:
+            <br><br>
+            .texto:last-child {font-family: cursive; color: hotpink;}
+            <br><br>
+            El resultado es este:
+
+        </div>
+        <div class="prueba3">
+            <div>
+                <p class="texto">Texto1</p>
+            </div>
+            <p>un espacio</p>
+            <p>otro espacio</p>
+            <p class="texto">Texto2</p>
+        </div>
+    </div>
+
+    <!--Nth child pseudo-selector-->
+
+    <div class="nth-child">
+        <h2>Nth child pseudo-selector</h2>
+        <h4>Selecciona un elemento por orden en otro elemento</h4>
+        <div class="ejemplo">
+            &lt;div class="`prueba4"&gt;<br>
+            &lt;p&gt;Texto1&lt;/p&gt;<br>
+            &lt;p&gt;Texto2&lt;/p&gt;<br>
+            &lt;p&gt;Texto3&lt;/p&gt;<br>
+            &lt;p&gt;Texto4&lt;/p&gt;<br>
+            &lt;/div&gt;
+            <br><br>
+            Formato CSS:
+            <br><br>
+            .prueba4 p:nth-child(4) {font-size: 70px}
+            <br><br>
+            El resultado es este:
+        </div>
+        <div class="prueba4">
+            <p>Texto1</p>
+            <p>Texto2</p>
+            <p>Texto3</p>
+            <p>Texto4</p>
+        </div>
+    </div>
+
+    <!--Nth last child selector-->
+
+    <div class="nth-last-child">
+        <h2>Nth last-child</h2>
+        <h4>Selecciona un elemento por su orden en otro elemento, contando desde atrás.</h4>
+        <div class="ejemplo">
+            &lt;div class="prueba5"&gt;<br>
+            &lt;p&gt;texto1&lt;/p&gt;<br>
+            &lt;p&gt;texto2&lt;/p&gt;<br>
+            &lt;p&gt;texto3&lt;/p&gt;<br>
+            &lt;p&gt;texto4&lt;/p&gt;<br>
+            &lt;p&gt;texto5&lt;/p&gt;<br>
+            &lt;/div&gt;
+            <br><br>
+            Formato CSS:
+            <br><br>
+            p:nth-last-child(2) {color: darkorange;}
+            <br><br>
+            El resultado es este:
+        </div>
+        <div class="prueba5">
+            <p>texto1</p>
+            <p>texto2</p>
+            <p>texto4</p>
+            <p>texto5</p>
+        </div>
+    </div>
+
+    <!--First of type selector-->
+
+    <div class="first-of-type">
+        <h2>First of type selector</h2>
+        <h4>Selecciona el primer elemento de un tipo especifico</h4>
+        <div class="ejemplo">
+
+        </div>
+        <div class="prueba6">
+            <p>texto1</p>
+            <ul>
+                <li>lista1</li>
+                <li>lista2</li>
+                <li>lista3</li>
+            </ul>
+            <p>texto2</p>
+            <p>texto3</p>
+        </div>
+    </div>
+
+    <!--Nth of type-->
+
+
 </body>
 </html>
