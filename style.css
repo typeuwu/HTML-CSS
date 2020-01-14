@@ -77,3 +77,9 @@ p>span
     font-family: monospace;
     color: rgb(255, 202, 235);
 }
+.prueba7 p:nth-last-of-type(even)
+{
+    background-color: indianred; 
+    border-radius: 6px; 
+    color: snow;
+}
