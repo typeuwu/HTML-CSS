@@ -381,6 +381,35 @@
         </div>
     </div>
 
+     <!--Only of type selector-->
+
+     <div class="only-type">
+        <h2>Only of type selector</h2>
+        <h4>Selecciona elementos que son unicos de su tipo dentro de su elemento padre</h4>
+
+        <div class="ejemplo">
+            &lt;div class="prueba8"&gt;<br>
+            &lt;p&gt;Miaaw&lt;/p&gt;<br>
+            &lt;p&gt;Miaaaw&lt;/p&gt;<br>
+            &lt;p&gt;&lt;span&gt;Miaw&lt;/span&gt;&lt;/p&gt;<br>
+            &lt;p&gt;Miaaaw&lt;/p&gt;<br>
+            &lt;/div&gt;
+            <br><br>
+            Formato CSS:
+            <br><br>
+            p span:only-of-type {color: lightcoral;}
+            <br><br>
+            El resultado es este:
+        </div>
+
+        <div class="prueba8">
+            <p>Miaaw</p>
+            <p>Miaaaw</p>
+            <p><span>Miaw</span></p>
+            <p>Miaaaw</p>
+        </div>
+        </div>
+
     
 
 

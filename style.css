@@ -83,3 +83,7 @@ p>span
     border-radius: 6px; 
     color: snow;
 }
+p span:only-of-type
+{
+   color: lightcoral;
+}
