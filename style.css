@@ -87,3 +87,6 @@ p span:only-of-type
 {
    color: lightcoral;
 }
+.prueba9 p:last-of-type, .prueba9 li:last-of-type{
+    color: lightsalmon;
+}

@@ -101,7 +101,7 @@
             <br>
             <br>Formato CSS:
             <br>
-            <br>ul * {font-size: large; color: yellowgreen;}
+            <br>ul * {font-size: large; color: rgb(145, 134, 214);}
             <br>
             <br>
             El resultado es este:
@@ -409,6 +409,43 @@
             <p>Miaaaw</p>
         </div>
         </div>
+
+        <!--Last of type selector-->
+
+        <div class="last-of-type">
+            <h2>Last of type selector</h2>
+            <h4>Selecciona el ultimo elemento de un tipo especifico</h4>
+
+            <div class="ejemplo">
+                &lt;div class="prueba9"&gt;<br>
+                &lt;p&gt;texto1&lt;/p&gt;<br>
+                &lt;p&gt;texto2&lt;/p&gt;<br>
+                &lt;ol&gt;<br>
+                    &lt;li&gt;lista1&lt;/li&gt;<br>
+                    &lt;li&gt;lista2&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+                &lt;p&gt;texto3&lt;/p&gt;<br>
+                &lt;p&gt;texto4&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+                Formato CSS:
+                <br><br>
+                .prueba9 p:last-of-type, .prueba9 li:last-of-type { color: lightsalmon;}
+                <br><br>
+                El resultado es este:
+            </div>
+            
+            <div class="prueba9">
+                <p>texto1</p>
+                <p>texto2</p>
+                <ol>
+                    <li>lista1</li>
+                    <li>lista2</li>
+                </ol>
+                <p>texto3</p>
+                <p>texto4</p>
+            </div>
+        </div>
+
 
     
 
