@@ -446,6 +446,32 @@
             </div>
         </div>
 
+        <!--Empty selector-->
+        
+        <div class="empty">
+            <h2>Empty selector</h2>
+            <h4>Selecciona elementos que no tengan algun otro elemento dentro de este</h4>
+
+            <div class="ejemplo">
+                &lt;div class="prueba10"&gt;<br>
+                &lt;p&gt;&lt;/p&gt;<br>
+                &lt;p&gt;texto2&lt;/p&gt;<br>
+                &lt;p&gt;&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+                Formato CSS:
+                <br><br>
+                .prueba10 p:empty { background-color: lightseagreen; widht: 100px; height: 20px;}
+                <br><br>
+                El resultado es este:
+            </div>
+            <div class="prueba10">
+                <p></p>
+                <p>texto2</p>
+                <p></p>
+            </div>
+        </div>
+
+
 
     
 

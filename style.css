@@ -90,3 +90,9 @@ p span:only-of-type
 .prueba9 p:last-of-type, .prueba9 li:last-of-type{
     color: lightsalmon;
 }
+.prueba10 p:empty
+{
+    background-color: lightseagreen;
+    height: 20px;
+}
+
