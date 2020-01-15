@@ -471,6 +471,63 @@
             </div>
         </div>
 
+        <!--Negation pseudo-class-->
+
+        <div class="negation">
+            <h2>Negation pseudo-class</h2>
+            <h4>Selecciona todos los elementos que no coincidan con el selector de negacion</h4>
+
+            <div class="ejemplo">
+                &lt;div class="prueba11"&gt;<br>
+                &lt;p&gt;&lt;span class="info"&gt;span1&lt;/span&gt;&lt;/p&gt;<br>
+                &lt;p&gt;&lt;span&gt;span2&lt;/span&gt;&lt;/p&gt;<br>
+                &lt;span&gt;span3&lt;/p&gt;<br>
+                &lt;p&gt;&lt;span class="info"&gt;span4&lt;/span&gt;&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+                Formato CSS:
+                <br><br>
+                .prueba11 span:not(.info) {color: lime;}
+                <br><br>
+                El resultado es este:
+            </div>
+            <div class="prueba11">
+                <p><span class="info">span1</span></p>
+                <p><span>span2</span></p>
+                <span>span3</span>
+                <p><span class="info">span4</span></p>
+            </div>
+        </div>
+
+        <!--Attribute selector-->
+
+        <div class="attribute">
+            <h2>Attribute selector</h2>
+            <h4>Selecciona todos los elementos que tienen un atributo especifico</h4>
+
+            <div class="ejemplo">
+                &lt;div class="prueba12"&gt;<br>
+                &lt;h1&gt;Soy un titulo&lt;/h1&gt;<br>
+                &lt;h3&gt;Soy un subtitulo&lt;/h2&gt;<br>
+                &lt;a href="#"&gt;soy un hiperlace&lt;/a&gt;<br>
+                &lt;a href="#"&gt;soy otro hiperenlace&lt;/a&gt;<br>
+                &lt;/div&gt;<br><br>
+                Formato CSS:
+                <br><br>
+                .prueba12 *[href]{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: mediumslateblue;}
+
+            </div>
+            <div class="prueba12">
+                <h1>Soy un titulo</h1>
+                <h3>Soy un subtitulo</h2>
+                <a href="#">soy un hiperenlace</a><br>
+                <a href="#">soy otro hiperenlace</a>
+            </div>
+
+            
+        </div>
+
+
 
 
     

@@ -95,4 +95,12 @@ p span:only-of-type
     background-color: lightseagreen;
     height: 20px;
 }
-
+.prueba11 span:not(.info)
+{
+     color: lime;
+}
+.prueba12 *[href]
+{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: mediumslateblue;
+}
