@@ -523,9 +523,144 @@
                 <a href="#">soy un hiperenlace</a><br>
                 <a href="#">soy otro hiperenlace</a>
             </div>
-
             
-        </div>
+            <h4>Puedes combinar el atributo selector con otro selector 
+                (como el selector de nombre de etiquetas) añadiendolo al final.</h4>
+                <br>
+    
+                <div class="ejemplo">
+                    &lt;div class="prueba3"&gt;<br>
+                    &lt;a href="stylep.css" target="_blank"&gt;Hipervinculo&lt;/a&gt;&lt;br&gt;<br>
+                    &lt;a href="#"&gt;Otro vinculo&lt;/a&gt;
+                    <br><br>
+                    Formato CSS:
+                    <br><br>
+                    .prueba13 a[target]
+                    <br><br>
+                    {font-size: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+                    <br><br> 
+                    El resultado es este:
+                </div>
+                <br>
+                <div class="prueba13">
+                    <a href="stylep.css" target="_blank">Hipervinculo</a><br>
+                    <a href="#">Otro hipervinculo</a>
+                </div>
+            </div>
+    
+            <!--Attribute value selector-->
+    
+            <div class="attribute-value">
+                <h2>Attribute value selector</h2>
+                <h4>Selecciona todos los elementos que tienen 
+                un valor de atributo especifico</h4>
+    
+                <div class="ejemplo">
+                    &lt;div class="prueba14"&gt;<br>
+                    &lt;form action="#"&gt;<br>
+                    Primer nombre: &lt;input type="text" name="Primernombre"&gt;&lt;br&gt;&lt;br&gt;
+                    Segundo nombre: &lt;input type="text" name="Segundonombre"&gt;&lt;br&gt;<br>
+                    &lt;input type="submit" value="Submit"&gt;<br>
+                    &lt;/form&gt;<br>
+                    &lt;/div&gt;<br><br>
+                    Formato CSS:
+                    <br><br>
+                    .prueba14 input[type="submit"] { font-style: italic; color: rgb(255, 0, 0);}
+                    <br><br>
+                    El resultado es este:
+                </div>
+                <br>
+                <div class="prueba14">
+                    <form action="#">
+                        Primer nombre: <input type="text" name="Primernombre"><br><br>
+                        Segundo nombre: <input type="text" name="Segundonombre"><br>
+                        <input type="submit" value="Submit">
+                        </form>
+                </div>
+            </div>
+    
+            <!--Attribute starts with selector-->
+    
+            <div class="attribute-starts">
+                <h2>Attribute starts with selector</h2>
+                <h4>Selecciona todos los elementos con un 
+                valor de atributo que comienza con un caracter especifico</h4>
+    
+                <div class="ejemplo">
+                    &lt;div class="prueba15"&gt;<br>
+                    &lt;p id="texto"&gt;texto1&lt;/p&gt;<br>
+                    &lt;p&gt;texto2&lt;/p&gt;<br>
+                    &lt;p id="terminal"&gt;texto3&lt;/p&gt;<br>
+                    &lt;/div&gt;
+                    <br><br>
+                    Formato CSS:
+                    <br><br>
+                    .prueba15 p[id^="te"] { color: olive; font-style: oblique;}
+                    <br><br>
+                    El resultado es este:
+                </div>
+    
+                <div class="prueba15">
+                    <p id="texto">texto1</p>
+                    <p>texto2</p>
+                    <p id="terminal">texto3</p>
+                </div>
+            </div>
+    
+            <!--Attribute end with selector-->    
+    
+            <div class="attribute-end">
+                <h2>Attribute Ends with selector</h2>
+                <h4>Selecciona todos los elementos con un valor de 
+                atributo que termina con un caracter especifico</h4>
+    
+                <div class="ejemplo">
+                    &lt;div class="prueba16"&gt;<br>
+                    &lt;p id="definicion&gt;texto1&lt;/p&gt;<br>
+                    &lt;p&gt;texto2&lt;/p&gt;<br>
+                    &lt;p id="conclusion"&gt;texto3&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+                    Formato CSS:
+                    <br><br>
+                    .prueba16 p[id$="te"] { color: orangered; font-style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px}
+                    <br><br>
+                    El resultado es este:
+                </div>
+    
+                <div class="prueba16">
+                    <p id="definicion">texto1</p>
+                    <p>texto2</p>
+                    <p id="conclusion">texto3</p>
+                </div>
+            </div>
+    
+            <!--Attribute wildcard selector-->
+    
+            <div class="attribute-wildcard">
+                <h2>Attribute Wildcard Selector</h2>
+                <h4>Selecciona todos los elementos con un valor de atributo 
+                que contiene un caracter especifico en cualquier lugar</h4>
+    
+                <div class="ejemplo">
+                    &lt;div class="prueba17"&gt;<br>
+                    &lt;p&gt;texto1&lt;/p&gt;<br>
+                    &lt;p class="attribute"&gt;texto2&lt;/p&gt;<br>
+                    &lt;p&gt;texto3&lt;/p&gt;<br>
+                    &lt;p class="attract"&gt;texto4&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+                   Formato CSS:
+                   <br><br>
+                   .prueba17 p[class*="att"] { color: teal; font-family: cursive; font-size: 20px;}
+                   <br><br>
+                   El resultado es este:
+                </div>
+                <div class="prueba17">
+                    <p>texto1</p>
+                    <p class="attribute">texto2</p>
+                    <p>texto3</p>
+                    <p class="attract">texto4</p>
+                </div>
+            </div>
 
 
 
